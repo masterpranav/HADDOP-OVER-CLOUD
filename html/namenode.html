@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NameNode</title>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+
+</head>
+<body>
+		<div class="container">
+	<form action="scripts/hdfsname.py">
+
+	  <div class="form-group">
+		<label for="namenodenumber">Name Nodes :</label>
+		<input  type="text" class="form-control" value="1" id="namenodenumber" placeholder="1" readonly >
+	  </div>
+		
+	 <div class="form-group">
+		<label for="folder_name">Enter the folder name :</label>
+		<input  type="text" class="form-control" id="folder_name" placeholder="master" name='folder_name'>
+	  </div>
+	  
+	  <div class="form-group">
+		<label for="namenode_ip">IP-Address :</label>
+		<input required pattern="^([0-9]{1,3}\.){3}[0-9]{1,3}$" type="text" class="form-control" name='namenode_ip' id="namenode_ip" placeholder="xxx.xxx.xxx.xxx">
+	  </div>	   	  	
+	     
+	 <input class="btn btn-primary" type="submit">	  
+	</form>
+
+	</div>
+	<script src="assets/js/jquery.min.js" > </script>
+  	
+   	<script src="assets/js/bootstrap.min.js" > </script>
+ 
+</body>
+</html>
